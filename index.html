@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html lang="ja">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>雷の鳴る夜に</title>
+        <link rel="stylesheet" href="02_css/style.css"> 
+    </head>
+         
+    <body> 
+
+        <div id="app">
+
+            <main id="game"> 
+                <h1 id="title">雷の鳴る夜に</h1>
+                <div id="text"></div> 
+                <div id="choices"></div> 
+                <div id="bottomBar">
+                    <button id="backButton">戻る</button>
+                    <div id="endingStatus"></div>
+                </div>
+                
+            </main> 
+        
+            <div id="sidePanels">
+                <aside id="inventoryPanel">
+                    <h2>所持アイテム</h2>
+                    <ul id="inventoryList"></ul>
+                </aside>
+
+                <aside id="musicPanel">
+                    <h2>音楽</h2>
+                    <button id="musicToggleButton">no data</button>
+                </aside>
+            </div>
+
+        </div>
+
+        <script src="04_data/story.js"></script>
+        <script src="03_js/main.js"></script>
+    </body> 
+             
+</html>

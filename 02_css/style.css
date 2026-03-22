@@ -1,0 +1,184 @@
+body{
+background:#111;
+color:white;
+font-family:sans-serif;
+margin: 0;
+padding: 20px;
+}
+
+#app {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#game{
+    flex: 1;
+    max-width: 720px;
+}
+
+#sidePanels {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+#title {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+#text{
+font-size:18px;
+line-height:1.8;
+white-space: pre-wrap;
+}
+
+#choices {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice-block {
+    margin-top: 0;
+}
+
+.choice-button {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.choice-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.choice-requirement {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+
+
+#backButton {
+    display: block;
+    margin-top: 20px;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+
+
+#inventoryPanel {
+    width: 260px;
+    background: rgba(255,255,255,0.06);
+    padding: 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+}
+
+#musicPanel {
+    width: 220px;
+    background: rgba(255,255,255,0.06);
+    padding: 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+}
+
+#inventoryPanel h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#inventoryList {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.empty-inventory {
+    color: #bbb;
+}
+
+#musicPanel h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#musicUnavailable {
+    font-size: 40px;
+    line-height: 1;
+    color: #bbb;
+    text-align: center;
+    padding: 12px 0;
+}
+
+#musicToggleButton {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 24px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#musicToggleButton:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+@media (max-width: 800px) {
+    #app {
+        flex-direction: column;
+    }
+
+    #game {
+        max-width: 100%;
+    }
+
+    #inventoryPanel {
+        width: 100%;
+        position: static;
+        order: 2;
+    }
+
+    #text {
+        font-size: 16px;
+    }
+
+    .choice-button {
+        font-size: 16px;
+        padding: 16px;
+    }
+}
+
+#title {
+    cursor: pointer;
+    user-select: none;
+}
+
+#title:hover {
+    opacity: 0.85;
+}
